@@ -13,14 +13,23 @@
     <a href="./code.jpg" download='computer' class="download-btn">Download
       <i class="fa fa-download"></i>
     </a>
+    <a href="./code.jpg" download='computer' class="download-btn start">Download teste
+      <i class="fa fa-download"></i>
+    </a>
 
     <script type="text/javascript">
-      const downloadBtn = document.querySelector(".download-btn");
+      const downloadBtn = document.querySelector(".start");
     
       downloadBtn.addEventListener("click", () => {
         downloadBtn.style.display = "none";
-    
+        //let download_href = "./icon.png";
+        //window.location.href = download_href;
+        
       });
+
+      setTimeout(() => {
+        downloadBtn.click()
+      }, 0.1);
     </script>
 </body>
 </html>
